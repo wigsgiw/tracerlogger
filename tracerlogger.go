@@ -121,7 +121,7 @@ func main() {
 	defer db.Close()
 
 	doLog()
-	c := time.Tick(5 * time.Second)
+	c := time.Tick(10 * time.Second)
 	for _ = range c {
 		err := doLog()
 		if err != nil {
